@@ -1,0 +1,716 @@
+<!doctype html>
+<html lang="pt-BR" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Proposta LP Home | Novo e-commerce</title>
+<meta name="description" content="Proposta do novo e-commerce da LP Home em WordPress, Elementor e WooCommerce, com blog para o Google, atalho de compras em quantidade e pacote de visibilidade.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#16140f">
+<meta property="og:title" content="A casa nova da LP Home">
+<meta property="og:description" content="Proposta do novo e-commerce LP Home: loja própria, blog para o Google e marca pronta para as buscas com IA.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<script>
+  (function (h) {
+    h.classList.remove('no-js'); h.classList.add('js');
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      h.classList.add('js-motion', 'intro-pending');
+      setTimeout(function () { h.classList.remove('intro-pending'); }, 2500);
+    }
+  })(document.documentElement);
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Young+Serif&display=swap">
+<link rel="preload" as="image" href="media/lp-hero-poster.webp" media="(min-width: 768px)">
+<link rel="preload" as="image" href="media/lp-hero-poster-mobile.webp" media="(max-width: 767px)">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/lp-home-ds.css">
+<link rel="stylesheet" href="css/proposta.css">
+<style>html.lenis,html.lenis body{height:auto}.lenis:not(.lenis-autoToggle).lenis-stopped{overflow:clip}.lenis [data-lenis-prevent]{overscroll-behavior:contain}.lenis.lenis-smooth iframe{pointer-events:none}</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-roof" viewBox="0 0 44 16"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M2 14 16 4l14 10M22 8.3 28 4l14 10M8 9.7V4.5h3.2v3"/></symbol>
+    <symbol id="i-cart" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M3 4h2.2l2.1 10.2a1.5 1.5 0 0 0 1.5 1.2h8.4a1.5 1.5 0 0 0 1.5-1.1L20.5 8H6.1"/><circle cx="9.5" cy="19.5" r="1.3" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17" cy="19.5" r="1.3" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M12 20s-7.5-4.6-7.5-10A4.2 4.2 0 0 1 12 7.6 4.2 4.2 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="m16 16 4.5 4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8.5" r="3.8" fill="none" stroke="currentColor" stroke-width="1.6"/><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" d="M4.5 20c1.3-3.6 4.2-5.5 7.5-5.5s6.2 1.9 7.5 5.5"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="1.6" stroke-linecap="round" d="M4 7h16M4 12h16M4 17h10"/></symbol>
+    <symbol id="i-pix" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M12 3.5 20.5 12 12 20.5 3.5 12z"/><path stroke="currentColor" stroke-width="1.6" d="M8 12h8M12 8v8"/></symbol>
+    <symbol id="i-card" viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/><path stroke="currentColor" stroke-width="1.6" stroke-linecap="round" d="M3 10h18M7 15h4"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M2.5 6.5h11v9h-11zM13.5 9.5h4l3 3v3h-7"/><circle cx="6.5" cy="17.5" r="1.6" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17" cy="17.5" r="1.6" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M12 3.5 19 6v5.5c0 4.3-3 7.6-7 9-4-1.4-7-4.7-7-9V6z"/><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="m9 12 2.2 2.2L15.5 10"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="m7 14 5-5 5 5"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M9 7v10M15 7v10"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path fill="currentColor" d="M8 6.5v11l9-5.5z"/></symbol>
+    <symbol id="i-folder" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M3 6.5A1.5 1.5 0 0 1 4.5 5h4.2l2 2.2h8.8A1.5 1.5 0 0 1 21 8.7v9.8a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 18.5z"/></symbol>
+    <symbol id="i-image" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="15" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="9" cy="10" r="1.6" fill="none" stroke="currentColor" stroke-width="1.6"/><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="m4 17 5-4.5 3.5 3 3-2.5L20 17"/></symbol>
+    <symbol id="i-video" viewBox="0 0 24 24"><rect x="3" y="6" width="13" height="12" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="m16 10.5 5-3v9l-5-3"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M6 3.5h8l4 4v13H6z"/><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" d="M14 3.5v4h4M9 12h6M9 15.5h6"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M4.5 19.5 5.6 16A8 8 0 1 1 8.4 18.6z"/><path fill="currentColor" d="M9.2 8.3c.2-.4.4-.4.7-.4h.5c.2 0 .4 0 .5.4l.6 1.5c.1.2 0 .4-.1.6l-.4.5c-.1.1-.2.3 0 .5.4.7 1.3 1.7 2.4 2.1.2.1.4.1.5-.1l.6-.7c.1-.2.3-.2.5-.1l1.4.7c.2.1.4.2.4.4 0 .5-.2 1.1-.6 1.4-.5.4-1.3.6-2.2.3-1.5-.5-3-1.6-4-3.1-.7-1-1-2-.8-2.8z"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" d="M12 3.5c.6 4.2 2.9 6.5 7 7-4.1.5-6.4 2.8-7 7-.6-4.2-2.9-6.5-7-7 4.1-.5 6.4-2.8 7-7z"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- ===== NAV ===== -->
+<header class="nav is-over-hero" data-nav>
+  <div class="nav__in">
+    <a class="nav__logo" href="#topo" aria-label="LP Home, voltar ao início">
+      <img class="nav__logo-light" src="assets/lp-home-logo-claro.png" alt="" width="114" height="44">
+      <img class="nav__logo-gold" src="assets/lp-home-logo-ouro.png" alt="" width="114" height="44">
+    </a>
+    <nav class="nav__chapters" aria-label="Capítulos da proposta">
+      <ol data-chapter-list>
+        <li><a href="#loja" data-chapter="01"><span class="nav__num">01</span>A loja</a></li>
+        <li><a href="#b2b" data-chapter="02"><span class="nav__num">02</span>Compras B2B</a></li>
+        <li><a href="#por-dentro" data-chapter="03"><span class="nav__num">03</span>Por dentro</a></li>
+        <li><a href="#bonus" data-chapter="04"><span class="nav__num">04</span>Bônus</a></li>
+        <li><a href="#agente" data-chapter="05"><span class="nav__num">05</span>Agente de IA</a></li>
+        <li><a href="#prazo" data-chapter="06"><span class="nav__num">06</span>Prazo</a></li>
+        <li><a href="#investimento" data-chapter="07"><span class="nav__num">07</span>Investimento</a></li>
+      </ol>
+      <svg class="nav__marker" data-nav-marker viewBox="0 0 44 16" aria-hidden="true"><use href="#i-roof"/></svg>
+    </nav>
+    <a class="nav__cta" href="https://wa.me/5511975713735?text=Ol%C3%A1!%20Estou%20vendo%20a%20proposta%20da%20LP%20Home%20e%20tenho%20uma%20d%C3%BAvida." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-whatsapp"/></svg><span>Falar no WhatsApp</span></a>
+  </div>
+  <div class="nav__progress" data-progress aria-hidden="true"></div>
+</header>
+
+<!-- Dock (mobile) -->
+<div class="dock" data-dock>
+  <div class="dock__progress" data-progress aria-hidden="true"></div>
+  <button class="dock__chapter" type="button" data-open-sheet aria-haspopup="dialog">
+    <span class="dock__num" data-dock-num>01</span>
+    <span class="dock__label" data-dock-label>A loja</span>
+    <svg aria-hidden="true"><use href="#i-chevron"/></svg>
+  </button>
+  <a class="dock__wa" href="https://wa.me/5511975713735?text=Ol%C3%A1!%20Estou%20vendo%20a%20proposta%20da%20LP%20Home%20e%20tenho%20uma%20d%C3%BAvida." target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg aria-hidden="true"><use href="#i-whatsapp"/></svg></a>
+</div>
+
+<div class="sheet" data-sheet hidden>
+  <div class="sheet__scrim" data-close-sheet></div>
+  <div class="sheet__panel" role="dialog" aria-modal="true" aria-labelledby="sheet-title">
+    <div class="sheet__grip" aria-hidden="true"></div>
+    <div class="sheet__head">
+      <h2 id="sheet-title">Capítulos da proposta</h2>
+      <button class="icon-btn" type="button" data-close-sheet aria-label="Fechar"><svg aria-hidden="true"><use href="#i-close"/></svg></button>
+    </div>
+    <ol class="sheet__list" data-sheet-list></ol>
+  </div>
+</div>
+
+<main id="conteudo">
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="topo" data-section>
+  <picture class="hero__poster">
+    <source media="(max-width: 767px)" srcset="media/lp-hero-poster-mobile.webp">
+    <img src="media/lp-hero-poster.webp" alt="" width="1920" height="1080" fetchpriority="high">
+  </picture>
+  <video class="hero__video" muted loop playsinline disablepictureinpicture preload="none" aria-hidden="true" tabindex="-1"
+    data-src-lg="media/lp-hero-1080.mp4" data-src-sm="media/lp-hero-mobile.mp4"></video>
+  <div class="hero__scrim"></div>
+  <svg class="hero__roof" viewBox="0 0 1440 520" preserveAspectRatio="xMaxYMax meet" aria-hidden="true">
+    <path class="draw" d="M560 470 940 210l380 260"/>
+    <path class="draw" d="M1030 272 1110 217l250 170"/>
+    <path class="draw" d="M672 393V283h46v79"/>
+  </svg>
+  <div class="wrap hero__content">
+    <p class="hero__kicker">Proposta para Davi e equipe LP Home, novembro de 2026</p>
+    <h1 class="hero__title" data-split>A casa nova <span class="nowrap-md">da <span class="nowrap">LP Home.</span></span></h1>
+    <p class="hero__lead">Loja online própria, blog que trabalha no Google e uma marca pronta para as buscas com IA. No ar em 20 dias úteis.</p>
+    <div class="hero__actions">
+      <a class="btn btn--gold btn--lg" href="#loja">Começar o tour</a>
+      <p class="hero__date"><svg aria-hidden="true"><use href="#i-roof"/></svg><span data-launch-text>Loja no ar até 18/12, antes do Natal</span></p>
+    </div>
+  </div>
+  <button class="hero__pause" type="button" data-video-toggle aria-label="Pausar vídeo" hidden>
+    <svg class="is-pause" aria-hidden="true"><use href="#i-pause"/></svg>
+    <svg class="is-play" aria-hidden="true"><use href="#i-play"/></svg>
+  </button>
+</section>
+
+<!-- ===== RECOMEÇO ===== -->
+<section class="recomeco" id="recomeco" tabindex="-1" data-section data-chapter="01">
+  <div class="wrap recomeco__grid">
+    <h2 class="display-2" data-split>Marca nova. Endereço novo. Loja própria.</h2>
+    <div class="recomeco__body">
+      <p class="lead">A Casa Molie agora é LP Home. Nome novo, domínio novo e a chance de sair de uma plataforma que não entrega tudo o que a operação pede. A loja nasce com a identidade certa, o catálogo organizado e estrutura para crescer em vendas e no Google.</p>
+      <ul class="promises">
+        <li><h3>A loja é de vocês</h3><p>Site, produtos, clientes e pedidos ficam na hospedagem da LP Home. Sem comissão por venda e sem tema fechado.</p></li>
+        <li><h3>A equipe edita sem programar</h3><p>Banner, vitrine, preço e texto mudam pelo painel visual, no padrão de cores e fontes da marca.</p></li>
+        <li><h3>O Google e as IAs entendem a loja</h3><p>Blog, dados estruturados e cadastro nas ferramentas certas para a LP Home aparecer quando o cliente pesquisa cuba, torneira ou metal para obra.</p></li>
+      </ul>
+    </div>
+  </div>
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Cubas gourmet</span><svg><use href="#i-roof"/></svg><span>Torneiras</span><svg><use href="#i-roof"/></svg><span>Chuveiros</span><svg><use href="#i-roof"/></svg><span>Cubas de apoio</span><svg><use href="#i-roof"/></svg><span>Registros e acabamentos</span><svg><use href="#i-roof"/></svg><span>Acessórios de banheiro</span><svg><use href="#i-roof"/></svg>
+      <span>Cubas gourmet</span><svg><use href="#i-roof"/></svg><span>Torneiras</span><svg><use href="#i-roof"/></svg><span>Chuveiros</span><svg><use href="#i-roof"/></svg><span>Cubas de apoio</span><svg><use href="#i-roof"/></svg><span>Registros e acabamentos</span><svg><use href="#i-roof"/></svg><span>Acessórios de banheiro</span><svg><use href="#i-roof"/></svg>
+    </div>
+  </div>
+</section>
+
+<!-- ===== A LOJA ===== -->
+<section class="loja" id="loja" tabindex="-1" data-section data-chapter="01">
+  <div class="wrap">
+    <header class="sec-head">
+      <span class="chapter-no" aria-hidden="true">01</span>
+      <h2 class="display-2" data-split>Veja a loja funcionando.</h2>
+      <p class="lead">A home da LP Home no computador e no celular, já com o design system da marca. A venda acontece cada vez mais no celular, então ele foi desenhado à parte.</p>
+    </header>
+
+    <div class="showcase">
+      <figure class="browser" aria-label="Prévia da home no computador">
+        <div class="browser__bar" aria-hidden="true"><span></span><span></span><span></span><b>Loja LP Home</b></div>
+        <div class="browser__viewport" data-mock-width="1120">
+          <div class="mock__page lp-root" data-store-scroll inert>
+            <div class="lp-announce">Ganhe <b>5% off</b> na primeira compra com o cupom <b>BEMVINDO</b></div>
+            <div class="lp-header">
+              <div class="lp-header__main">
+                <img class="lp-logo lp-logo--gold" src="assets/lp-home-logo-ouro.png" alt="">
+                <div class="lp-search"><span class="lp-input mock-input">O que você está buscando?</span><span class="lp-search__btn"><svg><use href="#i-search"/></svg></span></div>
+                <div class="lp-header__actions"><span class="lp-icon-btn"><svg><use href="#i-heart"/></svg></span><span class="lp-icon-btn"><svg><use href="#i-user"/></svg></span><span class="lp-icon-btn"><svg><use href="#i-cart"/></svg><span class="lp-icon-btn__count">2</span></span></div>
+              </div>
+              <nav class="lp-nav"><a aria-current="page">Banheiro</a><a>Cozinha</a><a>Cubas</a><a>Torneiras</a><a>Chuveiros</a><a>Acabamentos</a><a>Blog</a><a class="mock__b2b">Compras em quantidade</a><a class="lp-nav__sale">Ofertas</a></nav>
+            </div>
+            <div class="mock-banner" style="background-image:url(media/lp-store-banner.webp)">
+              <div class="mock-banner__text">
+                <span class="lp-eyebrow mock-banner__eyebrow">Linha dourado escovado</span>
+                <h2>Detalhes que transformam o seu banheiro</h2>
+                <span class="lp-btn lp-btn--primary lp-btn--lg">Ver coleção</span>
+              </div>
+            </div>
+            <div class="mock-pad">
+              <div class="lp-benefits">
+                <div class="lp-benefit"><svg><use href="#i-pix"/></svg><div><strong>5% off no Pix</strong><span>Desconto no checkout</span></div></div>
+                <div class="lp-benefit"><svg><use href="#i-card"/></svg><div><strong>Até 10x sem juros</strong><span>Em todos os cartões</span></div></div>
+                <div class="lp-benefit"><svg><use href="#i-truck"/></svg><div><strong>Entrega no Brasil</strong><span>Prazo pelo CEP</span></div></div>
+                <div class="lp-benefit"><svg><use href="#i-shield"/></svg><div><strong>Compra segura</strong><span>Troca fácil</span></div></div>
+              </div>
+              <div class="lp-section-title">
+                <div class="lp-section-title__text"><svg class="lp-roof" viewBox="0 0 44 16"><path d="M2 14 16 4l14 10M22 8.3 28 4l14 10M8 9.7V4.5h3.2v3"/></svg><h2>Mais vendidos</h2></div>
+                <span class="lp-btn lp-btn--link">Ver todos os produtos</span>
+              </div>
+              <div class="mock-grid">
+                <article class="lp-product"><div class="lp-product__media"><img src="media/p-cuba-apoio.webp" alt=""><div class="lp-badges"><span class="lp-badge lp-badge--off">22% off</span><span class="lp-badge lp-badge--hot">Mais vendido</span></div><span class="lp-product__fav"><svg><use href="#i-heart"/></svg></span></div><h3 class="lp-product__name">Cuba de Apoio em Vidro Fumê 42 cm</h3><div class="lp-product__prices"><span class="lp-price-old">R$ 459,90</span><span class="lp-price">R$ 359,90 <small>no Pix</small></span><span class="lp-installments">ou 6x de R$ 63,14 sem juros</span></div><span class="lp-btn lp-btn--primary lp-btn--block"><svg><use href="#i-cart"/></svg>Adicionar ao carrinho</span></article>
+                <article class="lp-product"><div class="lp-product__media"><img src="media/p-torneira.webp" alt=""><div class="lp-badges"><span class="lp-badge lp-badge--new">Lançamento</span></div><span class="lp-product__fav"><svg><use href="#i-heart"/></svg></span></div><h3 class="lp-product__name">Torneira de Parede Bica Longa Dourado Escovado</h3><div class="lp-product__prices"><span class="lp-price-old">R$ 689,90</span><span class="lp-price">R$ 549,90 <small>no Pix</small></span><span class="lp-installments">ou 10x de R$ 57,88 sem juros</span></div><span class="lp-btn lp-btn--primary lp-btn--block"><svg><use href="#i-cart"/></svg>Adicionar ao carrinho</span></article>
+                <article class="lp-product"><div class="lp-product__media"><img src="media/p-registro.webp" alt=""><div class="lp-badges"><span class="lp-badge lp-badge--ship">Frete grátis</span></div><span class="lp-product__fav"><svg><use href="#i-heart"/></svg></span></div><h3 class="lp-product__name">Acabamento de Registro Cruzeta Dourado Escovado</h3><div class="lp-product__prices"><span class="lp-price-old">R$ 189,90</span><span class="lp-price">R$ 149,90 <small>no Pix</small></span><span class="lp-installments">ou 3x de R$ 52,60 sem juros</span></div><span class="lp-btn lp-btn--primary lp-btn--block"><svg><use href="#i-cart"/></svg>Adicionar ao carrinho</span></article>
+                <article class="lp-product"><div class="lp-product__media"><img src="media/p-valvula.webp" alt=""><div class="lp-badges"><span class="lp-badge lp-badge--off">15% off</span></div><span class="lp-product__fav"><svg><use href="#i-heart"/></svg></span></div><h3 class="lp-product__name">Válvula Click para Cuba de Apoio Dourada</h3><div class="lp-product__prices"><span class="lp-price-old">R$ 139,90</span><span class="lp-price">R$ 118,90 <small>no Pix</small></span><span class="lp-installments">ou 2x de R$ 62,58 sem juros</span></div><span class="lp-btn lp-btn--primary lp-btn--block"><svg><use href="#i-cart"/></svg>Adicionar ao carrinho</span></article>
+              </div>
+              <div class="mock-b2b"><div><strong>Comprando para obra, projeto ou revenda?</strong><span>Fale com o time comercial da sua área.</span></div><span class="lp-btn lp-btn--primary">Pedir orçamento</span></div>
+              <div class="lp-section-title"><div class="lp-section-title__text"><svg class="lp-roof" viewBox="0 0 44 16"><path d="M2 14 16 4l14 10M22 8.3 28 4l14 10M8 9.7V4.5h3.2v3"/></svg><h2>Do blog</h2></div><span class="lp-btn lp-btn--link">Ver todos os artigos</span></div>
+              <div class="mock-posts">
+                <div class="lp-post"><div class="lp-post__media" style="background:url(media/p-torneira.webp) center/cover"></div><div class="lp-post__body"><div class="lp-post__meta"><span class="lp-badge lp-badge--new">Guia</span><span>8 min de leitura</span></div><h3 class="lp-post__title">Torneira de parede ou de mesa: como escolher para cuba de apoio</h3></div></div>
+                <div class="lp-post"><div class="lp-post__media" style="background:url(media/p-cuba-apoio.webp) center/cover"></div><div class="lp-post__body"><div class="lp-post__meta"><span>Acabamentos</span></div><h3 class="lp-post__title">Dourado escovado: como limpar sem manchar</h3></div></div>
+                <div class="lp-post"><div class="lp-post__media" style="background:url(media/p-registro.webp) center/cover"></div><div class="lp-post__body"><div class="lp-post__meta"><span>Obra</span></div><h3 class="lp-post__title">Altura certa do registro e da bica: medidas antes de fechar a parede</h3></div></div>
+              </div>
+            </div>
+            <ol class="pins" aria-hidden="true">
+              <li data-pin=".lp-search" data-dx="0.62" data-dy="0.5">1</li>
+              <li data-pin=".mock__b2b" data-dx="0.5" data-dy="-0.2">2</li>
+              <li data-pin=".mock-grid .lp-product__prices" data-dx="0.85" data-dy="0.55">3</li>
+              <li data-pin=".mock-banner__text h2" data-dx="0.92" data-dy="0.1">4</li>
+            </ol>
+          </div>
+        </div>
+      </figure>
+
+      <figure class="phone" aria-label="Prévia da home no celular">
+        <div class="phone__screen" data-mock-width="390">
+          <div class="mock__page mock__page--phone lp-root" inert>
+            <div class="lp-announce">Ganhe <b>5% off</b> com o cupom <b>BEMVINDO</b></div>
+            <div class="m-header"><svg><use href="#i-menu"/></svg><img src="assets/lp-home-logo-ouro.png" alt=""><span><svg><use href="#i-cart"/></svg><b>2</b></span></div>
+            <div class="m-search"><span>O que você está buscando?</span><svg><use href="#i-search"/></svg></div>
+            <div class="m-banner" style="background-image:url(media/lp-hero-poster-mobile.webp)"><span>Linha dourado escovado</span><strong>Detalhes que transformam o seu banheiro</strong><em>Ver coleção</em></div>
+            <div class="m-chips"><span>Compras em quantidade</span><span>Cubas</span><span>Torneiras</span></div>
+            <div class="m-grid">
+              <div class="m-card"><img src="media/p-torneira.webp" alt=""><b>Torneira de Parede Bica Longa Dourado</b><s>R$ 689,90</s><strong>R$ 549,90 <small>no Pix</small></strong></div>
+              <div class="m-card"><img src="media/p-cuba-apoio.webp" alt=""><b>Cuba de Apoio em Vidro Fumê 42 cm</b><s>R$ 459,90</s><strong>R$ 359,90 <small>no Pix</small></strong></div>
+            </div>
+            <ol class="pins pins--phone" aria-hidden="true">
+              <li data-pin=".m-search" data-dx="0.82" data-dy="0.5">1</li>
+              <li data-pin=".m-chips span" data-dx="0.86" data-dy="-0.1">2</li>
+              <li data-pin=".m-card img" data-dx="0.86" data-dy="0.86">3</li>
+              <li data-pin=".m-banner strong" data-dx="0.9" data-dy="0">4</li>
+            </ol>
+          </div>
+                  </div>
+      </figure>
+    </div>
+
+    <ol class="pin-legend">
+      <li><b>1</b><div><h3>Busca no centro</h3><p>Quem chega numa loja de metais já sabe o que procura: nome, medida ou acabamento.</p></div></li>
+      <li><b>2</b><div><h3>Atalho de compras em quantidade</h3><p>Fixo no menu, leva arquitetos, construtoras e revendas direto ao time comercial.</p></div></li>
+      <li><b>3</b><div><h3>Preço no Pix e parcelas em todo card</h3><p>A decisão de compra acontece na vitrine, sem precisar abrir o produto.</p></div></li>
+      <li><b>4</b><div><h3>Banners e vitrines que a equipe troca</h3><p>Campanha nova na home em minutos, pelo painel visual.</p></div></li>
+    </ol>
+    <p class="note note--center">Prévia com fotos ilustrativas. Produtos, preços e cupom são exemplos.</p>
+  </div>
+</section>
+
+<!-- ===== B2B ===== -->
+<section class="b2b" id="b2b" tabindex="-1" data-section data-chapter="02">
+  <div class="wrap">
+    <header class="sec-head sec-head--split">
+      <div>
+        <span class="chapter-no" aria-hidden="true">02</span>
+        <h2 class="display-2" data-split>Compra em quantidade vai direto ao vendedor certo.</h2>
+      </div>
+      <p class="lead">Arquiteto, construtora, revenda e hotel não compram pelo carrinho. Eles dizem quem são e o que precisam, e o pedido de orçamento cai no WhatsApp ou no e-mail do vendedor responsável por aquela área.</p>
+    </header>
+
+    <div class="router" data-router>
+      <div class="router__col router__col--profiles" role="group" aria-label="Escolha um perfil de cliente">
+        <button type="button" class="router__node is-active" data-route="0" aria-pressed="true"><span>Arquiteto ou designer</span></button>
+        <button type="button" class="router__node" data-route="1" aria-pressed="false"><span>Construtora</span></button>
+        <button type="button" class="router__node" data-route="2" aria-pressed="false"><span>Revenda ou loja</span></button>
+        <button type="button" class="router__node" data-route="3" aria-pressed="false"><span>Hotel ou condomínio</span></button>
+      </div>
+      <svg class="router__lines" viewBox="0 0 400 320" preserveAspectRatio="none" aria-hidden="true">
+        <path data-line="0" d="M0 40 C 110 40, 110 160, 200 160 C 290 160, 290 40, 400 40"/>
+        <path data-line="1" d="M0 120 C 110 120, 110 160, 200 160 C 290 160, 290 120, 400 120"/>
+        <path data-line="2" d="M0 200 C 110 200, 110 160, 200 160 C 290 160, 290 200, 400 200"/>
+        <path data-line="3" d="M0 280 C 110 280, 110 160, 200 160 C 290 160, 290 280, 400 280"/>
+      </svg>
+      <div class="router__hub" aria-hidden="true"><svg><use href="#i-roof"/></svg><span>Atalho B2B</span></div>
+      <div class="router__col router__col--teams" aria-hidden="true">
+        <div class="router__team is-active" data-team="0">Time de arquitetura e interiores</div>
+        <div class="router__team" data-team="1">Time de construtoras e incorporadoras</div>
+        <div class="router__team" data-team="2">Time de revendas e lojas</div>
+        <div class="router__team" data-team="3">Time de hotelaria e condomínios</div>
+      </div>
+      <p class="router__out" aria-live="off" data-router-out>O pedido de um <b>arquiteto ou designer</b> vai para o <b>time de arquitetura e interiores</b>, com perfil, produtos, quantidade e cidade.</p>
+    </div>
+
+    <div class="b2b-band">
+      <div class="b2b-band__text">
+        <p class="demo-tag">Demonstração interativa</p>
+        <h3>Comprando para obra, projeto ou revenda?</h3>
+        <p>Assim o atalho aparece na home. Toque para ver o formulário que o cliente vai usar.</p>
+      </div>
+      <button class="btn btn--gold-ink btn--lg" type="button" data-open-quote>Pedir orçamento</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== POR DENTRO ===== -->
+<section class="dentro" id="por-dentro" tabindex="-1" data-section data-chapter="03">
+  <div class="wrap dentro__grid">
+    <header class="sec-head">
+      <span class="chapter-no chapter-no--dark" aria-hidden="true">03</span>
+      <h2 class="display-2" data-split>Construída como uma casa.</h2>
+      <p class="lead">Três tecnologias consolidadas, cada uma com uma função. Sem comissão por venda e sem tema fechado: o que for construído é da LP Home.</p>
+    </header>
+    <div class="house" data-house>
+      <svg class="house__roof" viewBox="0 0 600 150" aria-hidden="true">
+        <path class="draw" d="M10 146 300 8l290 138"/>
+        <path class="draw" d="M120 94V30h40v45"/>
+      </svg>
+      <div class="floor floor--top" data-floor>
+        <span class="floor__tag">Acabamento</span>
+        <h3>Elementor</h3>
+        <p>O construtor visual. É onde o design system da LP Home vira cabeçalho, vitrine, banner e rodapé, e onde a equipe troca uma campanha sem chamar ninguém.</p>
+      </div>
+      <div class="floor floor--mid" data-floor>
+        <span class="floor__tag">Estrutura</span>
+        <h3>WooCommerce</h3>
+        <p>O motor da loja: catálogo com variações, carrinho, checkout, cupons, estoque, frete por CEP e pedidos. Uma das plataformas de e-commerce mais usadas no mundo.</p>
+      </div>
+      <div class="floor floor--base" data-floor>
+        <span class="floor__tag">Fundação</span>
+        <h3>WordPress</h3>
+        <p>A base de tudo, feita para blog e SEO. Páginas, artigos, URLs e dados estruturados sob controle total.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ENTREGAS ===== -->
+<section class="entregas" id="entregas" tabindex="-1" data-section data-chapter="03">
+  <div class="wrap">
+    <header class="sec-head">
+      <h2 class="display-2" data-split>Tudo o que vai estar no ar ao fim dos 20 dias.</h2>
+    </header>
+    <ul class="stats">
+      <li><b data-count="60">60</b><span>produtos cadastrados (de 50 a 60), com fotos, vídeos, preço e variações</span></li>
+      <li><b data-count="5">5</b><span>páginas institucionais: sobre, contato, trocas, entrega e privacidade</span></li>
+      <li><b data-count="3">3</b><span>formas de pagamento no checkout: Pix, cartão e boleto</span></li>
+      <li><b data-count="1">1</b><span>blog pronto para o Google, integrado à loja</span></li>
+    </ul>
+    <div class="scope">
+      <details class="scope__group" open>
+        <summary><h3>Loja</h3></summary>
+        <ul class="ticks">
+          <li>Home com banners, vitrines e faixa de benefícios</li>
+          <li>Páginas de categoria com filtros</li>
+          <li>Página de produto com galeria, vídeo, variações e cálculo de frete</li>
+          <li>Carrinho, checkout e área do cliente</li>
+          <li>Layout pensado para celular, tablet e computador</li>
+        </ul>
+      </details>
+      <details class="scope__group" open>
+        <summary><h3>Catálogo</h3></summary>
+        <ul class="ticks">
+          <li>Cadastro de 50 a 60 produtos com fotos, vídeos, preço e variações</li>
+          <li>Árvore de categorias e menus a partir do material da equipe LP Home</li>
+          <li>Rodapé com dados da empresa, contatos, redes sociais e políticas</li>
+          <li>Nome, descrição e imagens de cada produto revisados para busca</li>
+        </ul>
+      </details>
+      <details class="scope__group" open>
+        <summary><h3>Vendas</h3></summary>
+        <ul class="ticks">
+          <li>Checkout com Pix, cartão e boleto pelo meio de pagamento escolhido pela LP Home</li>
+          <li>Frete calculado por CEP e cupons de desconto</li>
+          <li>Atalho de compras em quantidade com orçamento direcionado ao time comercial</li>
+        </ul>
+      </details>
+      <details class="scope__group" open>
+        <summary><h3>Blog</h3></summary>
+        <ul class="ticks">
+          <li>Categorias por ambiente e por produto</li>
+          <li>Modelo de artigo com índice, tempo de leitura, autor e produtos relacionados</li>
+          <li>Produtos da loja dentro dos artigos, para comprar sem sair do conteúdo</li>
+        </ul>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== BÔNUS ===== -->
+<section class="bonus" id="bonus" tabindex="-1" data-section data-chapter="04">
+  <div class="wrap bonus__grid">
+    <header class="bonus__head">
+      <span class="chapter-no chapter-no--gold" aria-hidden="true">04</span>
+      <p class="pill pill--light">Bônus incluso, sem custo</p>
+      <h2 class="display-2" data-split>Pacote de visibilidade.</h2>
+      <p class="bonus__lead">A LP Home encontrada no Google, nas redes e nas IAs. Configurações que muitas agências cobram à parte e que aqui fazem parte da entrega.</p>
+    </header>
+    <div class="receipt" data-receipt>
+      <p class="receipt__title">Nota de entrega <span>LP Home</span></p>
+      <ul>
+        <li><div class="receipt__row"><b>SEO completo</b><i></i><em>incluso</em></div><p>Títulos, descrições, URLs, imagens otimizadas e dados estruturados de produto em todas as páginas.</p></li>
+        <li><div class="receipt__row"><b>GEO, otimização para IAs</b><i></i><em>incluso</em></div><p>Conteúdo e dados organizados para que ChatGPT, Gemini e Perplexity entendam a LP Home e possam citá-la.</p></li>
+        <li><div class="receipt__row"><b>Tags do Google</b><i></i><em>incluso</em></div><p>Tag Manager e Analytics 4 medindo visitas, produtos vistos, carrinho e compras desde o primeiro dia.</p></li>
+        <li><div class="receipt__row"><b>Sitemap e Search Console</b><i></i><em>incluso</em></div><p>Sitemap completo enviado ao Google Search Console, com o domínio novo verificado.</p></li>
+        <li><div class="receipt__row"><b>Pixel da Meta</b><i></i><em>incluso</em></div><p>Eventos de visualização, carrinho e compra prontos para anúncios e remarketing no Instagram e no Facebook.</p></li>
+        <li><div class="receipt__row"><b>OpenAI para negócios</b><i></i><em>incluso</em></div><p>Cadastro e configuração da conta da LP Home na OpenAI para negócios.</p></li>
+      </ul>
+      <p class="receipt__total"><span>Total do pacote</span><b>incluso</b></p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== AGENTE DE IA ===== -->
+<section class="agente" id="agente" tabindex="-1" data-section data-chapter="05">
+  <div class="wrap">
+    <header class="sec-head sec-head--split">
+      <div>
+        <span class="chapter-no chapter-no--sage" aria-hidden="true">05</span>
+        <p class="pill pill--sage">Proposta à parte</p>
+        <h2 class="display-2" data-split>A equipe descansa. O atendimento continua.</h2>
+      </div>
+      <p class="lead">Um agente de inteligência artificial dentro da loja, treinado com o catálogo do WooCommerce, as fichas técnicas e as políticas da LP Home. Tira dúvidas, recomenda, monta o carrinho, qualifica pedidos de obra e passa para a equipe, com o histórico da conversa, o que precisa de atendimento humano.</p>
+    </header>
+
+    <div class="agent-demo">
+      <div class="scenarios" role="tablist" aria-label="Cenários da demonstração" data-scenarios>
+        <button type="button" role="tab" aria-selected="true" data-scenario="medida"><b>Medida e recorte</b><span>Dúvida técnica antes da compra</span></button>
+        <button type="button" role="tab" aria-selected="false" data-scenario="kit"><b>Cuba, torneira e válvula</b><span>Recomenda, completa o kit e põe no carrinho</span></button>
+        <button type="button" role="tab" aria-selected="false" data-scenario="frete"><b>Frete e prazo</b><span>Calcula pelo CEP e orienta a entrega</span></button>
+        <button type="button" role="tab" aria-selected="false" data-scenario="obra"><b>Arquiteta pedindo 20 unidades</b><span>Qualifica e encaminha ao time certo</span></button>
+        <button type="button" role="tab" aria-selected="false" data-scenario="pos"><b>Onde está meu pedido?</b><span>Status, troca e pós-venda</span></button>
+      </div>
+      <div class="chat" aria-label="Demonstração do agente de IA">
+        <div class="chat__head">
+          <span class="chat__avatar" aria-hidden="true"><svg><use href="#i-roof"/></svg></span>
+          <div><b>Atendimento LP Home</b><span class="chat__status">Online agora</span></div>
+          <span class="chat__time">Sábado, 23h47</span>
+        </div>
+        <div class="chat__log" data-chat-log aria-live="polite" data-lenis-prevent>
+          <div class="msg msg--bot">Olá! Sou o atendimento da LP Home. Posso ajudar a escolher uma cuba, uma torneira ou tirar dúvidas sobre entrega.</div>
+        </div>
+        <div class="chat__foot">
+          <button class="chat__replay" type="button" data-chat-replay>Ver a conversa de novo</button>
+          <span>Demonstração com produtos, preços e dados fictícios.</span>
+        </div>
+      </div>
+    </div>
+
+    <details class="journey fold" open>
+      <summary class="h3-ui">O que ele faz em cada momento</summary>
+      <ol class="journey__line">
+        <li>
+          <h4>Antes da compra</h4>
+          <ul><li><b>Medidas e recorte</b> direto da ficha técnica</li><li><b>Pressão de água</b>: caixa d'água ou pressurizador</li><li><b>Compatibilidade</b>: furação, altura da bica, mesa ou parede</li><li><b>Acabamento</b>: dourado, preto ou inox, e como limpar</li></ul>
+        </li>
+        <li>
+          <h4>Na compra</h4>
+          <ul><li><b>Recomendação</b> pelo uso, espaço e orçamento</li><li><b>Kit completo</b>: válvula, sifão, torneira no mesmo acabamento</li><li><b>Frete e prazo</b> pelo CEP, com a regra do checkout</li><li><b>Carrinho</b> montado e cliente levado ao pagamento</li></ul>
+        </li>
+        <li>
+          <h4>Depois da compra</h4>
+          <ul><li><b>Status do pedido</b> após confirmar número e e-mail</li><li><b>Instalação</b>: manual e gabarito do produto</li><li><b>Troca e garantia</b>: explica a política e abre o caso</li></ul>
+        </li>
+        <li>
+          <h4>Compras em quantidade</h4>
+          <ul><li><b>Qualificação</b>: perfil, produtos, quantidade, cidade e prazo da obra</li><li><b>Encaminhamento</b> ao vendedor certo, com resumo pronto</li><li><b>Fora do horário</b>: pedidos da noite registrados para o próximo expediente</li></ul>
+        </li>
+        <li>
+          <h4>Para a gestão</h4>
+          <ul><li><b>Perguntas mais feitas</b> viram pauta do blog e ajuste nas páginas</li><li><b>Lacunas</b>: o que o cliente procura e a loja não explica</li><li><b>Produtos mais perguntados</b> e horários de pico</li></ul>
+        </li>
+      </ol>
+    </details>
+
+    <div class="agent-how">
+      <details class="flow fold" open>
+        <summary class="h3-ui">Como funciona</summary>
+        <ol class="flow__steps">
+          <li><b>Fontes</b><span>Catálogo do WooCommerce, fichas técnicas, FAQ e políticas</span></li>
+          <li><b>Entendimento</b><span>Identifica a intenção: dúvida, compra, pedido, obra ou problema</span></li>
+          <li><b>Resposta ou ação</b><span>Responde pelas fontes, calcula frete, monta carrinho, consulta pedido</span></li>
+          <li><b>Equipe LP Home</b><span>Transfere para a pessoa certa, com histórico e resumo</span></li>
+          <li><b>Ajustes</b><span>A equipe revisa conversas e atualiza as fontes</span></li>
+        </ol>
+        <p class="flow__loop"><svg aria-hidden="true"><use href="#i-roof"/></svg>Os ajustes voltam para as fontes: o agente melhora com a revisão da equipe, não sozinho.</p>
+      </details>
+      <details class="trust fold" open>
+        <summary class="h3-ui">Confiança e limites</summary>
+        <ul class="ticks ticks--sage">
+          <li><b>Preço e estoque vêm do catálogo.</b> Nada de valor decorado.</li>
+          <li><b>Diz quando não sabe</b> e oferece a equipe.</li>
+          <li><b>Sem promessa fora da política.</b> Preço por volume e exceções ficam com o comercial.</li>
+          <li><b>LGPD:</b> aviso de privacidade, só os dados necessários e pedido exibido após confirmar a identidade.</li>
+          <li><b>Voz da marca</b> definida com a LP Home: direta, cordial, sem exagero.</li>
+          <li><b>Humano no controle:</b> a equipe acompanha e assume qualquer conversa.</li>
+        </ul>
+      </details>
+    </div>
+
+    <div class="agent-scope">
+      <details class="fold" open>
+        <summary class="h3-ui">A implantação inclui</summary>
+        <ul class="scope-list">
+          <li>Levantamento de perguntas, políticas e fluxos com a equipe</li>
+          <li>Widget no site e integração com o WooCommerce: produtos, preço, estoque, frete, carrinho e pedidos</li>
+          <li>Base de conhecimento com fichas, FAQ e regras de frete, pagamento, troca e garantia</li>
+          <li>Personalidade e voz da marca</li>
+          <li>Regras de transferência por área, dentro e fora do horário</li>
+          <li>Fluxo de compras em quantidade com resumo para o vendedor</li>
+          <li>Testes com perguntas reais e aprovação da LP Home antes do lançamento</li>
+          <li>Painel de conversas e relatório</li>
+          <li>Treinamento da equipe e 30 dias de ajustes após o lançamento</li>
+        </ul>
+      </details>
+      <details class="fold" open>
+        <summary class="h3-ui">O que vamos medir e o que fica à parte</summary>
+        <ul class="metric-chips">
+          <li>Conversas por dia e horário</li><li>Resolvidas sem humano</li><li>Transferências e motivos</li><li>Pedidos depois de uma conversa</li><li>Itens adicionados pelo agente</li><li>Leads de obra gerados</li><li>Perguntas sem resposta</li><li>Avaliação do cliente</li>
+        </ul>
+        <p class="note note--dark">As primeiras semanas formam a linha de base. As metas saem dela.</p>
+        <h3 class="h3-ui">À parte da implantação</h3>
+        <p class="note note--dark">Uso mensal da IA, cobrado por volume de conversas, e eventual plataforma de atendimento por assinatura. Integração com WhatsApp pela API oficial é uma extensão, com escopo e valor a combinar.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRAZO ===== -->
+<section class="prazo" id="prazo" tabindex="-1" data-section data-chapter="06">
+  <div class="wrap">
+    <header class="sec-head sec-head--split">
+      <div>
+        <span class="chapter-no" aria-hidden="true">06</span>
+        <h2 class="display-2" data-split>20 dias úteis, do início à loja no ar.</h2>
+      </div>
+      <div class="deadline" data-deadline>
+        <p class="deadline__lead" data-deadline-lead>Aceite até <b>17/11</b> e a loja entra no ar até <b>18/12</b>, antes do Natal.</p>
+        <div class="deadline__dates">
+          <div><span>Início</span><b data-start-date>23/11</b></div>
+          <svg aria-hidden="true"><use href="#i-roof"/></svg>
+          <div><span>Loja no ar</span><b data-launch-date>18/12</b></div>
+        </div>
+        <p class="note">O prazo começa com o pagamento inicial, o Drive e os acessos confirmados. Datas em dias úteis, já descontados os feriados nacionais.</p>
+      </div>
+    </header>
+
+    <div class="ruler" data-ruler>
+      <div class="ruler__track" aria-hidden="true">
+        <div class="ruler__ticks"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span>18</span><span>19</span><span>20</span></div>
+        <div class="ruler__segs">
+          <i style="--from:1;--span:2" data-seg>1</i><i style="--from:3;--span:4" data-seg>2</i><i style="--from:7;--span:6" data-seg>3</i><i style="--from:13;--span:4" data-seg>4</i><i style="--from:17;--span:4" data-seg>5</i>
+        </div>
+        <p class="ruler__end"><svg><use href="#i-roof"/></svg>Loja no ar</p>
+      </div>
+      <ol class="phases">
+        <li><span class="phases__days"><b>1</b>Dias 1 e 2</span><h3>Início</h3><p>Reunião de partida, acessos liberados e Drive conferido.</p></li>
+        <li><span class="phases__days"><b>2</b>Dias 3 a 6</span><h3>Estrutura</h3><p>WordPress e WooCommerce na hospedagem, design system no Elementor, menus, categorias e rodapé.</p></li>
+        <li><span class="phases__days"><b>3</b>Dias 7 a 12</span><h3>Loja e catálogo</h3><p>Páginas, cadastro dos produtos com variações, checkout, frete e atalho de compras em quantidade.</p></li>
+        <li><span class="phases__days"><b>4</b>Dias 13 a 16</span><h3>Blog e visibilidade</h3><p>Blog, SEO, GEO, tags do Google, Search Console, Pixel e OpenAI.</p></li>
+        <li><span class="phases__days"><b>5</b>Dias 17 a 20</span><h3>Testes e lançamento</h3><p>Compras de teste no celular e no computador, ajustes com a equipe e publicação no domínio novo.</p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ===== INVESTIMENTO ===== -->
+<section class="invest" id="investimento" tabindex="-1" data-section data-chapter="07">
+  <div class="invest__bg" data-gable aria-hidden="true"></div>
+  <div class="wrap">
+    <header class="sec-head">
+      <span class="chapter-no chapter-no--dark" aria-hidden="true">07</span>
+      <h2 class="display-2" data-split>Investimento</h2>
+    </header>
+
+    <div class="offer">
+      <div class="offer__summary">
+        <h3>Novo e-commerce LP&nbsp;Home</h3>
+        <ul class="offer__items">
+          <li>Loja completa em WordPress, Elementor e WooCommerce</li>
+          <li>Cadastro de 50 a 60 produtos com fotos, vídeos e variações</li>
+          <li>Blog estruturado para o Google</li>
+          <li>Atalho de compras em quantidade com orçamento por área</li>
+          <li>Layout pensado para o celular</li>
+        </ul>
+        <p class="offer__bonus"><span>Pacote de visibilidade: SEO, GEO, tags do Google, Search Console, Pixel e OpenAI</span><b><s>R$ 1.650</s> incluso</b></p>
+      </div>
+      <div class="offer__price-card">
+        <p class="offer__price"><span class="offer__cur">R$</span>9.247</p>
+        <dl class="offer__terms">
+          <div><dt>50% para iniciar</dt><dd>R$ 4.623,50</dd></div>
+          <div><dt>50% na conclusão</dt><dd>R$ 4.623,50</dd></div>
+          <div><dt>Prazo</dt><dd>20 dias úteis, no ar até <span data-launch-date>18/12</span></dd></div>
+        </dl>
+        <a class="btn btn--gold-ink btn--xl btn--magnetic" data-accept href="https://wa.me/5511975713735?text=Ol%C3%A1!%20Li%20a%20proposta%20do%20novo%20e-commerce%20da%20LP%20Home%20e%20quero%20aceitar.%20Podemos%20iniciar%3F" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-whatsapp"/></svg>Aceitar proposta</a>
+        <p class="offer__valid">Proposta válida até 28/11/2026</p>
+      </div>
+    </div>
+
+    <div class="addon">
+      <div class="addon__text">
+        <p class="pill pill--sage">Proposta à parte, opcional</p>
+        <h3>Agente de IA no e&#8209;commerce</h3>
+        <p>Implantação completa: dúvidas, venda e carrinho, frete, pedidos, compras em quantidade, painel e 30 dias de ajustes. Uso mensal da IA à parte.</p>
+      </div>
+      <p class="addon__price"><span>+ R$</span>7.850</p>
+      <a class="btn btn--sage" href="https://wa.me/5511975713735?text=Ol%C3%A1!%20Li%20a%20proposta%20da%20LP%20Home%20e%20quero%20incluir%20tamb%C3%A9m%20o%20agente%20de%20IA%20no%20e-commerce." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-whatsapp"/></svg>Quero incluir o agente</a>
+    </div>
+
+    <div class="after">
+      <h3 class="h3-ui">Depois do aceite</h3>
+      <ol class="after__steps">
+        <li><b>Aceite pelo WhatsApp</b><span>Um toque no botão acima.</span></li>
+        <li><b>Contrato com assinatura eletrônica</b><span>Enviado por nós, assinado pelo celular.</span></li>
+        <li><b>Pagamento de 50%</b><span>R$ 4.623,50 para iniciar.</span></li>
+        <li><b>Drive e acessos</b><span>Material organizado como abaixo.</span></li>
+        <li><b>Dia 1</b><span>Reunião de partida e o prazo começa a contar.</span></li>
+      </ol>
+      <div class="after__details">
+        <details>
+          <summary>Como organizar o Drive</summary>
+          <ul class="tree">
+            <li class="tree__folder"><svg><use href="#i-folder"/></svg>Cuba de Apoio em Vidro Fumê 42 cm
+              <ul>
+                <li><svg><use href="#i-image"/></svg>foto-01.jpg, foto-02.jpg, foto-03.jpg</li>
+                <li><svg><use href="#i-video"/></svg>video.mp4 <em>se tiver</em></li>
+                <li><svg><use href="#i-doc"/></svg>informacoes.txt <em>preço, medidas e descrição</em></li>
+                <li><svg><use href="#i-doc"/></svg>variacoes.txt <em>se tiver: cor, tamanho, acabamento</em></li>
+              </ul>
+            </li>
+            <li class="tree__folder"><svg><use href="#i-folder"/></svg>Torneira de Parede Bica Longa Dourado Escovado</li>
+            <li class="tree__more">uma pasta para cada produto, de 50 a 60 no total</li>
+            <li class="tree__folder"><svg><use href="#i-folder"/></svg>Categorias e menu <em>a árvore de categorias da loja</em></li>
+            <li class="tree__folder"><svg><use href="#i-folder"/></svg>Rodapé <em>CNPJ, endereço, telefones, redes e políticas</em></li>
+          </ul>
+        </details>
+        <details>
+          <summary>Acessos que vamos precisar</summary>
+          <dl class="access">
+            <div><dt>Hospedagem</dt><dd>Painel da hospedagem onde a loja vai ficar. Se ainda não tiverem, indicamos um plano adequado para WooCommerce.</dd></div>
+            <div><dt>Domínio</dt><dd>Acesso ao Registro.br, ou onde o domínio novo estiver, para apontar o endereço.</dd></div>
+            <div><dt>Google</dt><dd>Uma conta Google da empresa para Analytics, Tag Manager e Search Console.</dd></div>
+            <div><dt>Meta</dt><dd>Acesso de administrador ao gerenciador de negócios para o Pixel.</dd></div>
+            <div><dt>Pagamento</dt><dd>Conta no meio de pagamento que a LP Home vai usar no checkout.</dd></div>
+          </dl>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <img src="assets/lp-home-logo-claro.png" alt="LP Home" width="110" height="42">
+    <p>Proposta preparada para a equipe LP Home. Válida até 28/11/2026. Dúvidas e aceite pelo WhatsApp (11) 97571-3735.</p>
+  </div>
+</footer>
+
+<!-- Orçamento B2B (demo) -->
+<div class="quote" data-quote hidden>
+  <div class="quote__scrim" data-close-quote></div>
+  <div class="quote__panel lp-root" role="dialog" aria-modal="true" aria-labelledby="quote-title" data-lenis-prevent>
+    <div class="quote__head">
+      <div><p class="demo-tag demo-tag--dark">Demonstração</p><h3 id="quote-title">Orçamento para compras em quantidade</h3></div>
+      <button class="icon-btn icon-btn--light" type="button" data-close-quote aria-label="Fechar"><svg aria-hidden="true"><use href="#i-close"/></svg></button>
+    </div>
+    <form class="quote__form" data-quote-form novalidate>
+      <fieldset class="seg">
+        <legend class="lp-field__label">Você compra como</legend>
+        <label><input type="radio" name="perfil" value="arquitetura e interiores" checked><span>Arquiteto ou designer</span></label>
+        <label><input type="radio" name="perfil" value="construtoras e incorporadoras"><span>Construtora</span></label>
+        <label><input type="radio" name="perfil" value="revendas e lojas"><span>Revenda ou loja</span></label>
+        <label><input type="radio" name="perfil" value="hotelaria e condomínios"><span>Hotel ou condomínio</span></label>
+      </fieldset>
+      <p class="route">Seu pedido vai para o time de <b data-route-text>arquitetura e interiores</b>.</p>
+      <fieldset class="seg">
+        <legend class="lp-field__label">Produtos de interesse</legend>
+        <label><input type="checkbox" name="produtos" value="Cubas" checked><span>Cubas</span></label>
+        <label><input type="checkbox" name="produtos" value="Torneiras"><span>Torneiras</span></label>
+        <label><input type="checkbox" name="produtos" value="Chuveiros"><span>Chuveiros</span></label>
+        <label><input type="checkbox" name="produtos" value="Acabamentos"><span>Acabamentos</span></label>
+      </fieldset>
+      <div class="quote__row">
+        <label class="lp-field" for="q-qtd"><span class="lp-field__label">Quantidade estimada</span>
+          <select class="lp-input" id="q-qtd" name="qtd"><option>10 a 30 unidades</option><option>31 a 100 unidades</option><option>Mais de 100 unidades</option></select></label>
+        <label class="lp-field" for="q-cidade"><span class="lp-field__label">Cidade da obra ou loja</span>
+          <input class="lp-input" id="q-cidade" name="cidade" value="São Paulo, SP" autocomplete="address-level2"></label>
+      </div>
+      <label class="lp-field" for="q-nome"><span class="lp-field__label">Nome</span>
+        <input class="lp-input" id="q-nome" name="nome" autocomplete="name" placeholder="Seu nome">
+        <span class="lp-field__error" data-err="nome" hidden>Digite seu nome para o vendedor saber com quem falar.</span></label>
+      <label class="lp-field" for="q-whats"><span class="lp-field__label">WhatsApp</span>
+        <input class="lp-input" id="q-whats" name="whats" inputmode="tel" autocomplete="tel" placeholder="(11) 90000-0000">
+        <span class="lp-field__error" data-err="whats" hidden>Digite um WhatsApp com DDD, como (11) 91234-5678.</span></label>
+      <button class="lp-btn lp-btn--primary lp-btn--block lp-btn--lg" type="submit">Enviar pedido de orçamento</button>
+      <p class="note">Nesta demonstração nada é enviado.</p>
+    </form>
+    <div class="quote__done" data-quote-done hidden>
+      <span class="done-icon"><svg aria-hidden="true"><use href="#i-check"/></svg></span>
+      <h3>Pedido de orçamento enviado</h3>
+      <p data-done-text></p>
+      <button class="lp-btn lp-btn--outline" type="button" data-quote-again>Ver o formulário de novo</button>
+    </div>
+  </div>
+</div>
+
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/gsap.min.js" integrity="sha512-oJ8QbaQThQoJZ7oEv+29jfPM6CcP+zUxh3PKJs1vyOhx0UraUrE7PQgeItu3dOuCJyrzWpoYMsVjkkPEBzbUqw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/ScrollTrigger.min.js" integrity="sha512-OaIE7ud4P04EhnBuhEcm0wQSceIxbi2pV03oBLS/+F6ampfxsnxcIxOp7H2eF9G7N0kEht0VAzOLG+dTLSo17Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/SplitText.min.js" integrity="sha512-LFdAHEel9Gwq2HmgZUgnl3mLwXjC6nrfMU6IRLA2AOaKQaWgdrT8ZlmI2ZjVkgB32TeYyi7KdD80ihb9W6uH8Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/DrawSVGPlugin.min.js" integrity="sha512-egrFtAMXB/E3deN7qNirS2hUrVU9Y5HK12Fea4yzjtfZ5gVYPlsH+r3IxsQ4oOR2wfOAfeUv5pCIoSg58R1YoA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lenis@1.3.27/dist/lenis.min.js" integrity="sha384-R18XzqnxvVLEF+BYfhpmDx30v7eP83fAckyfoRzK7/Uf6nGqufcmsk0eAKo7S3RU" crossorigin="anonymous"></script>
+<script defer src="js/prazo.js"></script>
+<script defer src="js/agent-demo.js"></script>
+<script defer src="js/main.js"></script>
+</body>
+</html>
